@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WayneHils</string>
+    <string name="error">ERROR</string>
 </resources>
