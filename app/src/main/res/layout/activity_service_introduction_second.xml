@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spacebackgroundcolor"
+    tools:context=".Service_introduction_Second">
+
+    <ImageView
+        android:id="@+id/serviceimageview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/service_second_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/step2_title_imageview"
+        android:layout_width="96dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="247dp"
+        android:src="@drawable/ttv_step2_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceimageview" />
+
+    <ImageView
+        android:id="@+id/step2_secondtitle_imageView"
+        android:layout_width="312dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/step2_secondtitle_img"
+        app:layout_constraintStart_toStartOf="@+id/step2_title_imageview"
+        app:layout_constraintTop_toBottomOf="@id/step2_title_imageview" />
+
+    <ImageView
+        android:id="@+id/step2_Description_imageView"
+        android:layout_width="312dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/step2_description_img"
+        app:layout_constraintStart_toStartOf="@id/step2_title_imageview"
+        app:layout_constraintTop_toBottomOf="@id/step2_secondtitle_imageView" />
+
+
+    <ImageView
+        android:id="@+id/login_imageView"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/login_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/step2_title_imageview" />
+
+
+    <ImageView
+        android:id="@+id/next_imageView"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/next_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/step2_Description_imageView" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottomslidebar_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
