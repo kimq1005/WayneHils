@@ -28,7 +28,7 @@ Android Studio(Kotlin)을 활용해 개발했으며, Android Emulator(Pixel_2_XL
 
 * Login Edittext 및 Passwrod Edittext [Material design](https://material.io/components/text-fields)으로 구현.
 * Password의 맨 끝에 있는 아이콘을 클릭하면 Password의 암호화가 해제.
-* Email이나 Password가 틀리면 Error Textd와 Error SnackBar가 나타남( 간단한 테스트 함수 생성 LoginActivity의 testemailchecking() 참고 ).
+* Email이나 Password가 틀리면 Error Text와 Error SnackBar가 나타남( 간단한 테스트 함수 생성 LoginActivity의 testemailchecking() 참고 ).
 
 <!-- <img width="359" alt="image" src="https://user-images.githubusercontent.com/68366753/165315324-958382cc-221c-45fe-8917-29e2a08e0fe7.png">
 
