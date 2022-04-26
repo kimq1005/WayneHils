@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WayneHils">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Service_introduction_Third"
+            android:exported="false" />
+        <activity
+            android:name=".Service_introduction_Second"
+            android:exported="false" />
+        <activity
+            android:name=".Service_introduction_First"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
