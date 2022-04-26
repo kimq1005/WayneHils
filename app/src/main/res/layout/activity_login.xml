@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spacebackgroundcolor"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/maintitle_ImageView"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/maintitle_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/Email_textField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="end"
+        android:hint="E-Mail"
+        app:boxBackgroundColor="#24282F"
+        app:errorEnabled="true"
+        app:hintTextColor="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maintitle_ImageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="#AAAAAA"
+            app:placeholderText="E-Mail" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/password_textField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        app:boxBackgroundColor="#24282F"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email_textField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#AAAAAA"
+            app:placeholderText="E-Mail" />
+
+
+        <TextView
+            android:id="@+id/forgetpassword_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Forget password?"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Login_Btn"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/loginbtn_background"
+        android:scaleType="fitCenter"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/password_textField"
+        app:layout_constraintStart_toStartOf="@id/password_textField"
+        app:layout_constraintTop_toBottomOf="@+id/password_textField" />
+
+    <Button
+        android:id="@+id/signup_Btn"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/signup_button_background"
+        android:text="Sign UP"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/Login_Btn"
+        app:layout_constraintStart_toStartOf="@id/Login_Btn"
+        app:layout_constraintTop_toBottomOf="@id/Login_Btn" />
+
+    <ImageView
+        android:id="@+id/social_textView"
+        android:layout_width="154dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/loginpage_social_text_img"
+        app:layout_constraintEnd_toEndOf="@id/Email_textField"
+        app:layout_constraintStart_toStartOf="@id/Email_textField"
+        app:layout_constraintTop_toBottomOf="@id/signup_Btn" />
+
+    <View
+        android:id="@+id/google_view"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/google_background"
+        app:layout_constraintStart_toStartOf="@id/Email_textField"
+        app:layout_constraintTop_toBottomOf="@id/social_textView" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/goole_icon"
+        app:layout_constraintBottom_toBottomOf="@id/google_view"
+        app:layout_constraintEnd_toEndOf="@id/google_view"
+        app:layout_constraintStart_toStartOf="@id/google_view"
+        app:layout_constraintTop_toTopOf="@id/google_view" />
+
+    <View
+        android:id="@+id/facebook_view"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/facebook_background"
+        app:layout_constraintEnd_toEndOf="@id/Email_textField"
+        app:layout_constraintTop_toBottomOf="@id/social_textView" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/facebook_icon"
+        app:layout_constraintBottom_toBottomOf="@id/facebook_view"
+        app:layout_constraintEnd_toEndOf="@id/facebook_view"
+        app:layout_constraintStart_toStartOf="@id/facebook_view"
+        app:layout_constraintTop_toTopOf="@id/facebook_view" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Waynehills Bryant A.I INC"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottomslidebar_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
