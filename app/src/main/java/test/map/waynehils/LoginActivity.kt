@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
 
     //snackbar를 띄우기 위한 함수
     private fun FavroiteSnackBar(view: View) {
-        val snackbar = Snackbar.make(view, "Invaild E-mail/Password", Snackbar.LENGTH_LONG)
+        val snackbar = Snackbar.make(view, "Invaild E-mail/Password", 30000)
         snackbar.setBackgroundTint(resources.getColor(R.color.snakbarColor))
         snackbar.show()
     }
@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         binding.LoginBtn.setOnClickListener {
             val emailTextView = binding.inputEmail.text.toString()
 
-            if (emailTextView == "") {
+            if (emailTextView != "") {
                 binding.EmailTextField.error = " "
                 binding.passwordTextField.error = "Invalid E-mail/Password"
                 binding.forgetpasswordTextView.visibility = View.GONE
